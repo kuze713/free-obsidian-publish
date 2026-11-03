@@ -1,0 +1,19 @@
+# Allow-list: only the website, the Vault and portfolio-details are ever tracked.
+/*
+!/.gitignore
+!/_config.yml
+!/Gemfile
+!/Gemfile.lock
+!/README.md
+!/.github/
+!/Vault/
+!/portfolio-details/
+!/site/
+# Never track these, even inside the Vault
+Vault/.obsidian/
+Vault/.trash/
+Vault/_*/
+_site/
+.jekyll-cache/
+vendor/
+.bundle/

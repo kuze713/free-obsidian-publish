@@ -1,0 +1,19 @@
+# ---- Edit these ----
+title: kuze713
+description: Beginner in cyber security and pentesting. Learning labs and Linux daily, sharing what I learn.
+logo: profile.png          # an image file inside portfolio-details/ (square works best)
+url: ""                    # e.g. https://USERNAME.github.io or https://your-domain.com
+baseurl: ""                # "" for USERNAME.github.io / custom domain, "/repo-name" for project pages
+
+# ---- Folders (relative to this file) ----
+vault_dir: Vault                     # your Obsidian vault: everything in it is published
+details_dir: portfolio-details       # home.md, about.md and other portfolio pages
+
+# ---- Build settings: no need to change ----
+source: site
+destination: _site
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true

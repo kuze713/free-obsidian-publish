@@ -1,0 +1,13 @@
+<a class="logo" href="{{ '/' | relative_url }}"><img src="{{ site.logo_url }}" alt="{{ site.title }}"></a>
+<h1 class="name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+<p class="bio">{{ site.description }}</p>
+<div class="search"><input id="search-input" type="search" placeholder="Search notes and folders…" autocomplete="off" aria-label="Search"></div>
+<div id="search-results" hidden></div>
+<nav class="nav" id="nav">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+    {% for p in site.data.portfolio_nav %}<li><a href="{{ p.url }}">{{ p.title }}</a></li>{% endfor %}
+    <li><details open class="tree-root"><summary><a href="{{ '/notes/' | relative_url }}">Notes</a></summary>{{ site.data.vault_nav }}</details></li>
+  </ul>
+</nav>
